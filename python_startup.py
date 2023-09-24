@@ -9,6 +9,11 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
+try:
+    import untappd
+except ImportError:
+    pass
+
 _new_locals = [
     x
     for x in locals()
