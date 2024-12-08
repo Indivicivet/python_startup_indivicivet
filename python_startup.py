@@ -1,5 +1,7 @@
 _locals_pre_startup = [x for x in locals()]
 
+import itertools
+import functools
 import random
 import datetime
 import json
@@ -11,6 +13,7 @@ from pathlib import Path
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 try:
     import untappd
